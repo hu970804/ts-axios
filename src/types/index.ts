@@ -64,6 +64,8 @@ export interface Axios {
 }
 
 export interface AxiosInstance {
-  [x: string]: any;
+  // [x: string]: any;
   (config: AxiosRequestConfig): AxiosPromise
+
+  (url: string, config: AxiosRequestConfig): AxiosPromise
 }
